@@ -37,5 +37,9 @@ BUILD_FINGERPRINT := "google/walleye/walleye:11/RP1A.201005.004/6782484:user/rel
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/walleye/walleye:11/RP1A.201005.004/6782484:user/release-keys
 
+    # Active Edge
+PRODUCT_PACKAGES += \
+    ElmyraService
+
 $(call inherit-product-if-exists, vendor/google/walleye/walleye-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
